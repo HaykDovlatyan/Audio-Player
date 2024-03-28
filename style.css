@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease-in
+}
+
+body{
+    height: 100vh
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.audio-player{
+   width: 400px;
+   height: auto;
+   padding: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 2rem;
+   border-radius: 30px;
+   box-shadow: 0 0 20px 10px #08284F, 0 0 10px 5px #08284F inset
+}
+
+.audioplayer-top{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.song-time{
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    font-style: italic;
+    text-shadow: 2px 2px #08284F
+}
+
+.song-duration{
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    font-style: italic;
+    text-shadow: 2px 2px #08284F
+}
+
+.song-range{
+    appearance: none;
+    width: 220px;
+    height: 1px;
+    background: white
+}
+
+.song-range::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #08284F;
+    box-shadow: 0 0 20px 2px white, 0 0 2px white inset
+}
+
+.for-img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.for-img img{
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px
+}
+
+.title-name{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.title{
+    width: 70%;
+    height: 100%;
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+    font-style: italic;
+    text-shadow: 2px 2px #08284F
+}
+
+.menu-bar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.menu-bar i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px #08284F;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #08284F
+}
+
+.volume{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.volume i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #08284F inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    text-shadow: 2px 2px #08284F;
+    cursor: pointer
+}
+
+.audio-volume{
+    appearance: none;
+    width: 220px;
+    height: 1px;
+    background: white
+}
+
+.audio-volume::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #08284F;
+    box-shadow: 0 0 20px 5px white, 0 0 20x white inset
+}
+
+
+
+.item {
+    color: white; 
+    width: 400px;
+    height: 120px;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: -100%;
+}
+.item h2 {
+    cursor: pointer;
+    font-size: 22px;
+}
+.item h3 {
+    cursor: pointer;
+    font-size: 22px;
+}
+.item h4 {
+    cursor: pointer;
+    font-size: 22px;
+}
+.item h5 {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.btn {
+    width: 350px;
+    height: 90%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    left: 6%;
+    top: -90%;  
+    diplay: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 1rem;
+}
+.but {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    background: url(img/lines.jpg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.pict {
+    width: 150px;
+    height: 130px;
+    background: songList.picture;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+
+
+
